@@ -20,12 +20,11 @@ def insertionSort(arr):
 
 #sorting the array [12, 11, 13, 5, 6] using insertionSort
 arr = [12, 11, 13, 5, 6]
+print("Unsorted array is : ")
+print(arr)
 insertionSort(arr)
-lst = [] #empty list to store sorted elements
 print("Sorted array is : ")
-for i in range(len(arr)):
-	lst.append(arr[i])	 #appending the elements in sorted order
-print(lst)
+print(arr)
 
 
 # This code is contributed by Mohit Kumra
