@@ -14,10 +14,10 @@ def merge(arr, l, m, r):
 	R = [0] * (n2)
 
 	# Copy data to temp arrays L[] and R[]
-	for i in range(0, n1):
+	for i in range(n1):
 		L[i] = arr[l + i]
 
-	for j in range(0, n2):
+	for j in range(n2):
 		R[j] = arr[m + 1 + j]
 
 	# Merge the temp arrays back into arr[l..r]
@@ -57,7 +57,7 @@ def mergeSort(arr, l, r):
 
 		# Same as (l+r)//2, but avoids overflow for
 		# large l and h
-		m = l+(r-l)//2
+		m = (l+(r-l))//2
 
 		# Sort first and second halves
 		mergeSort(arr, l, m)
@@ -66,7 +66,7 @@ def mergeSort(arr, l, r):
 
 
 # Driver code to test above
-arr = [12, 11, 13, 5, 6, 7]
+arr = [12, 11, 13, 5, 6, 7, 100, 5432, 99999, -1, -45]
 n = len(arr)
 print("Given array is")
 for i in range(n):
